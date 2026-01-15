@@ -4,5 +4,7 @@ blue
 yellow
 black
 pink
+white
+dot
 purple
 gray
