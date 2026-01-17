@@ -1,0 +1,26 @@
+name: Multi Env
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy_QA:
+
+    runs-on: macos-latest
+    environment: QA
+    steps:
+      - uses: actions/checkout@v4
+
+  deploy_STG:
+
+    runs-on: macos-latest
+    environment: STG
+    steps:
+      - uses: actions/checkout@v4
+
+  deploy_PROD:
+
+    runs-on: macos-latest
+    environment: PROD
+    steps:
+      - uses: actions/checkout@v4
